@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Akuma JLPT</title>
+<meta name="description" content="What the Akuma JLPT app keeps, where, and what it sends to Google's Gemini with your own API key.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1c1c1e;
+    --muted: #6b6b70;
+    --rule: #e3e3e6;
+    --accent: #0a63c9;
+    --panel: #f5f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131315;
+      --fg: #ececee;
+      --muted: #9d9da3;
+      --rule: #2c2c30;
+      --accent: #6ba8f5;
+      --panel: #1c1c1f;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 42rem; margin: 0 auto; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; margin: 2.75rem 0 .75rem; letter-spacing: -.01em;
+    padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  p, li { margin: 0 0 .9rem; }
+  ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+  li { margin-bottom: .55rem; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 2.5rem; }
+  .lede { font-size: 1.05rem; }
+  .callout {
+    background: var(--panel);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.1rem;
+    margin: 0 0 1.1rem;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Akuma JLPT · Last updated 24 November 2026</p>
+
+  <p class="lede">Akuma JLPT is a JLPT study app: it turns past papers you
+  import into practice and mock exams, with notes and a strict sensei who grades
+  your results. This page explains what the app keeps, where, and what it
+  sends. Akuma JLPT is operated by Cheung Pak Wai, and &ldquo;we&rdquo; and
+  &ldquo;us&rdquo; mean us.</p>
+
+  <div class="callout">
+    <p><strong>We collect nothing about you.</strong> The app has no accounts,
+    no analytics and no servers of ours. To read your papers and write notes, it
+    sends them straight from your device to Google&rsquo;s Gemini API, using the
+    Google Cloud API key you enter. We never see any of it.</p>
+  </div>
+
+  <h2>What stays on your device</h2>
+
+  <p>The app keeps these in its own storage on your phone or tablet:</p>
+
+  <ul>
+    <li>the papers you import: their questions, furigana, translations,
+    explanations and the sensei&rsquo;s comments, and on iPhone and iPad a copy
+    of the PDF, so sections can be imported later;</li>
+    <li>your practice and mock exam history: your answers, scores and times;</li>
+    <li>the explanations you asked for with Explain, kept with their
+    questions;</li>
+    <li>your settings: your first language, the sensei&rsquo;s tone, the Gemini
+    model and Explain prompt, text size and dark mode;</li>
+    <li>your Google Cloud API key, in the iPhone and iPad Keychain, or in the
+    app&rsquo;s private storage on Android.</li>
+  </ul>
+
+  <p>None of this is sent to us. It is removed when you delete the app, and it
+  is included in your device&rsquo;s own backups in the same way as any other
+  app&rsquo;s data.</p>
+
+  <h2>What is sent to Google</h2>
+
+  <p>Akuma JLPT uses Google&rsquo;s Gemini API to read papers and write notes.
+  It contacts Google only when you ask it to, with your own API key, directly
+  from your device:</p>
+
+  <ul>
+    <li><strong>When you import a paper,</strong> the app uploads the PDF to
+    Gemini to read its questions, then sends the questions&rsquo; text to add
+    furigana, translations and explanations, and to write the sensei&rsquo;s
+    result comments. It deletes the uploaded PDF from Google when the import
+    finishes.</li>
+    <li><strong>When you tap Explain,</strong> the app sends the text you
+    selected and the question it is in, with only the sentence of a reading
+    passage that holds your selection.</li>
+  </ul>
+
+  <p>What Google does with these requests is governed by Google&rsquo;s terms
+  for the Gemini API and the Google Cloud account your key belongs to, not by
+  us. Under Google&rsquo;s terms, requests made with a free-tier key may be
+  used to improve Google&rsquo;s products. Requests are charged to your key
+  according to Google&rsquo;s pricing.</p>
+
+  <h2>What you choose to share</h2>
+
+  <ul>
+    <li><strong>Export all</strong> saves your papers, and if you choose, your
+    history and explanations, to a file in a place you pick. It never includes
+    your API key. Import all reads such a file back.</li>
+    <li><strong>Share</strong> on the results screen makes an image of your
+    score and the sensei&rsquo;s comment and hands it to the app you pick.</li>
+  </ul>
+
+  <h2>What we don&rsquo;t do</h2>
+
+  <p>Akuma JLPT has no sign-in, no analytics, no advertising, no crash
+  reporting and no third-party trackers. It reads only the files you choose,
+  and asks for no access to your location, contacts, camera, microphone or
+  photos. We do not sell data, because we do not have any.</p>
+
+  <h2>The App Store and Google Play</h2>
+
+  <p>You download Akuma JLPT from Apple&rsquo;s App Store or Google Play. Those
+  stores handle the download and may collect information under their own
+  privacy policies; we do not receive personal information from them about
+  you.</p>
+
+  <h2>Children</h2>
+
+  <p>We collect no personal information, from children or anyone else.</p>
+
+  <h2>Changes to this policy</h2>
+
+  <p>If a future version of the app handles information differently, we will
+  update this page and change the date at the top before that version is
+  released.</p>
+
+  <h2>Contact</h2>
+
+  <p>Questions about privacy:
+  <a href="mailto:hello@akuma-jlpt.com">hello@akuma-jlpt.com</a>.</p>
+
+  <footer>Akuma JLPT ·
+  <a href="/">akuma-jlpt.com</a> · <a href="/terms.html">Terms of Use</a></footer>
+
+</main>
+</body>
+</html>
